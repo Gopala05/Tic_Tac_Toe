@@ -62,7 +62,7 @@ def checkIfWin(board):
     if checkHorizontle(board) or checkRow(board) or checkDiag(board):
         printBoard(board)
         if winner == "O":
-            print("The winner is O!")
+            print("You couldn't beat the Computer!")
         else:
             print(f"The winner is {CurrentPlayername}!")
         gameRunning = False
