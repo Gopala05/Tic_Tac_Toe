@@ -3,11 +3,12 @@ import random
 board = ["-", "-", "-",
         "-", "-", "-",
         "-", "-", "-"]
+name = input("Enter your name")
+CurrentPlayername = name
 currentPlayer = "X"
 winner = None
 gameRunning = True
 
-# game board
 def printBoard(board):
     print(board[0] + " | " + board[1] + " | " + board[2])
     print("---------")
@@ -20,7 +21,7 @@ def playerInput(board):
     if board[inp-1] == "-":
         board[inp-1] = currentPlayer
     else:
-        print("Oops player is already at that spot.")
+        print("Sorry the player is already at that spot.")
 
 
 def checkHorizontle(board):
@@ -60,7 +61,10 @@ def checkIfWin(board):
     global gameRunning
     if checkHorizontle(board) or checkRow(board) or checkDiag(board):
         printBoard(board)
-        print(f"The winner is {winner}!")
+        if winner == "O":
+            print("The winner is O!")
+        else:
+            print(f"The winner is {CurrentPlayername}!")
         gameRunning = False
 
 def checkIfTie(board):
