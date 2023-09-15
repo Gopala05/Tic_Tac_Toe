@@ -3,7 +3,7 @@ import random
 board = ["-", "-", "-",
         "-", "-", "-",
         "-", "-", "-"]
-name = input("Enter your name")
+name = input("Enter your name: ")
 CurrentPlayername = name
 currentPlayer = "X"
 winner = None
