@@ -71,7 +71,7 @@ def checkIfTie(board):
     global gameRunning
     if "-" not in board:
         printBoard(board)
-        print("It is a tie!")
+        print("It's a TIE!")
         gameRunning = False
 
 def switchPlayer():
@@ -83,7 +83,7 @@ def switchPlayer():
 
 def computer(board):
     while currentPlayer == "O":
-        position = random.randint(0, 8)
+        position = random.randint(0, 9)
         if board[position] == "-":
             board[position] = "O"
             switchPlayer()
