@@ -23,7 +23,6 @@ def playerInput(board):
     else:
         print("Sorry the player O is already at that spot.")
 
-
 def checkHorizontle(board):
     global winner
     if board[0] == board[1] == board[2] and board[0] != "-":
