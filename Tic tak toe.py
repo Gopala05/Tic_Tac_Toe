@@ -21,7 +21,7 @@ def playerInput(board):
     if board[inp-1] == "-":
         board[inp-1] = currentPlayer
     else:
-        print("Sorry the player O is already at that spot.")
+        print("Sorry the player is already at that spot.")
 
 def checkHorizontle(board):
     global winner
